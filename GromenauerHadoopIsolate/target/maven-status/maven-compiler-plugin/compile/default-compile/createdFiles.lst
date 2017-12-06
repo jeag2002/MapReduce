@@ -1,0 +1,4 @@
+es\gromenauer\hadoop\Main.class
+es\gromenauer\hadoop\Main$1.class
+es\gromenauer\hadoop\mapper\MyMapper.class
+es\gromenauer\hadoop\reduce\MyReducer.class
