@@ -34,6 +34,16 @@ HADOOP INSTALATION WINDOWS
 Hadoop instalation: http://toodey.com/2015/08/10/hadoop-installation-on-windows-without-cygwin-in-10-mints/
 Hadoop execution: http://www.srccodes.com/p/article/45/run-hadoop-wordcount-mapreduce-example-windows
 
+(
+Define JAVA_PATH (Java SDK root path) HADOOP_PATH (HADOOP root path) in windows environment variables; 
+Include bin/sbin HADOOP path in PATH windows environment variables
+Modify script start_all set JAVA to JAVA_PATH
+)
+
+Test:
+
+hadoop jar /workspaces/workEclipse/workMarsGromenauer/server/hadoop-2.7.4/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.4.jar wordcount /test/input/input_2 /test/output
+
 Nodes HADOOP:
 http://localhost:8088
 http://localhost:50070
@@ -57,6 +67,13 @@ Optimization:
 https://es.hortonworks.com/blog/how-to-plan-and-configure-yarn-in-hdp-2-0/
 https://stackoverflow.com/questions/18525354/map-reduce-job-getting-stuck-at-map-0-reduce-0
 https://stackoverflow.com/questions/16713011/hadoop-namenode-is-not-starting-up
+
+mapreduce Uber mode:
+https://stackoverflow.com/questions/30284237/what-is-the-purpose-of-uber-mode-in-hadoop
+https://github.com/sayden/hadoop-summary/blob/master/05-How-mapreduce-works.md
+https://www.cloudera.com/documentation/enterprise/5-3-x/topics/cdh_ig_yarn_tuning.html
+http://networkgeekstuff.com/networking/tutorial-for-small-hadoop-cloud-cluster-lab-using-virtual-machines-and-compilingrunning-first-hello-world-map-reduce-example-project/
+
 
 For Hadoop 1.x: (Windows Permissions)
 
